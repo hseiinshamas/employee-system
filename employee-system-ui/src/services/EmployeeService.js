@@ -8,6 +8,10 @@ class EmployeeService {
     return axios.post(EMPLOYEE_API_BASE_URL, employee);
   }
 
+  getEmployees(){
+    return axios.get(EMPLOYEE_API_BASE_URL);
+  }
+
 }
 // eslint-disable-next-line
 export default new EmployeeService();
